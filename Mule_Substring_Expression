@@ -1,0 +1,11 @@
+flowVars.index =  payload.indexOf('a');
+flowVars.index1 = payload.lastIndexOf('a');
+flowVars.index2 ='5';
+flowVars.position ='3';
+flowVars.length =payload.length();
+
+flowVars.name =  org.apache.commons.lang3.StringUtils.substring(payload,flowVars.index,flowVars.length);
+flowVars.name1 =  org.apache.commons.lang3.StringUtils.substring(payload,flowVars.index1,flowVars.length);
+flowVars.name2= org.mule.util.StringUtils.substringAfter(payload,'a');
+flowVars.name3 =  org.apache.commons.lang3.StringUtils.substringAfter(payload,'a');
+flowVars.name4 =  org.apache.commons.lang3.StringUtils.substring(payload,flowVars.index2,flowVars.position); 
